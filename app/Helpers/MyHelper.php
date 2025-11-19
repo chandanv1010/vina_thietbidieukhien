@@ -97,7 +97,7 @@ if(!function_exists('getPrice')){
         if($product->price == 0){
 
             $result['html'] .= '<div class="price mt10">';
-                $result['html'] .= '<div class="price-sale">Liên Hệ</div>';
+                $result['html'] .= '<div class="price-sale">Liên hệ</div>';
             $result['html'] .= '</div>';
             return $result;
         }
@@ -131,7 +131,7 @@ if(!function_exists('getVariantPrice')){
         if($variant->price == 0){
 
             $result['html'] .= '<div class="price mt10">';
-                $result['html'] .= '<div class="price-sale">Liên Hệ</div>';
+                $result['html'] .= '<div class="price-sale">Liên hệ</div>';
             $result['html'] .= '</div>';
             return $result;
         }

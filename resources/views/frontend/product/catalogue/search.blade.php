@@ -6,13 +6,31 @@
                 <h2 class="heading-1 mb20"><span>{{ $seo['meta_title'] }}</span></h2>
                 @if(!is_null($products) && count($products))
                 <div class="product-list mb30">
-                    <div class="uk-grid uk-grid-medium">
-                        @foreach($products as $product)
-                            <div class="uk-width-small-1-2 uk-width-medium-1-4 mb20">
-                                @include('frontend.component.p-item', ['product'  => $product])
-                            </div>
+                    <ul class="uk-grid uk-grid-medium uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-5">
+                        @foreach ($products as $keyPost => $valPost)
+                        @php
+                            $title = $valPost->languages->first()->pivot->name;
+                            $image = $valPost->image;
+                            $href  = write_url($valPost->languages->first()->pivot->canonical);
+                            $description = cutnchar(strip_tags($valPost->languages->first()->pivot->description), 100);
+                            $price = getPrice($valPost);
+                        @endphp
+
+                            <li class="mb10">
+                                <div class="product-item">
+                                    <a href="{{ $href }}" class="image img-cover img-zoomin">
+                                    <img src="{{ $image }}" alt="{{ $title }}">
+                                    </a>
+                                    <div class="info">
+                                        <h3 class="title" title="{{ $title }}">
+                                            <a href="{{ $href }}" title="{{ $title }}">{{ $title }}</a>
+                                        </h3>
+                                        <div class="description">{!! $description !!}</div>
+                                    </div>
+                                </div>
+                            </li>
                         @endforeach
-                    </div>
+                    </ul>
                     <div class="uk-text-center search-paginate">
                         @if ($products->hasPages())
                             <ul class="pagination">

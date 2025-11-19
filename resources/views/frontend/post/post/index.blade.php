@@ -20,7 +20,7 @@
                             <div class="description">
                                 {!! $post->content !!}
                             </div>
-                            @if (isset($postCatalogue->posts) && !is_null($postCatalogue->posts))
+                            @if (isset($postCatalogue->posts) && !is_null($postCatalogue->posts) && $post->canonical !== 've-chung-toi')
                                 <div class="artdetail-relate style-1 mt30">
                                     <div class="heading-1 mb10">
                                     <span>Bài viết liên quan</span>
@@ -29,7 +29,8 @@
                                     <ul class="uk-list uk-clearfix uk-grid uk-grid-medium uk-grid-width-medium-1-2 uk-grid-width-large-1-3 list-related">
                                         @foreach ($postCatalogue->posts as $key => $val)
                                         @php
-                                            if($val->id === $post->id) continue; 
+                                            if($val->id  === $post->id) continue; 
+                                            if($key > 5) break;
                                             $title = $val->languages->first()->pivot->name;
                                             $image = $val->image;
                                             $href  = write_url($val->languages->first()->pivot->canonical);

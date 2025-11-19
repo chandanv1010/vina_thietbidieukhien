@@ -54,7 +54,7 @@
                         <ul class="uk-list uk-clearfix uk-grid uk-grid-small uk-grid-width-1-2 uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-5">
                             @foreach($val->products as $keyPost => $valPost)
                                 @php
-                                    if($keyPost > 9) break;
+                                    if($keyPost > 4) break;
                                     $title = $valPost->languages[0]->name;
                                     $image = $valPost->image;
                                     $href = write_url($valPost->languages[0]->canonical);

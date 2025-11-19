@@ -1,6 +1,6 @@
 {
   "resources/css/app.scss": {
-    "file": "assets/app-f4e25077.css",
+    "file": "assets/app-07cf7d70.css",
     "isEntry": true,
     "src": "resources/css/app.scss"
   },
@@ -15,7 +15,7 @@
     "src": "resources/js/app.backend.js"
   },
   "resources/js/app.js": {
-    "file": "assets/app-38bd4c50.js",
+    "file": "assets/app-064e6f44.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
@@ -53,7 +53,7 @@
   },
   "resources/vendor/backend/font-awesome/fonts/fontawesome-webfont.svg": {
     "file": "assets/fontawesome-webfont-fc378232.svg",
-    "src": "resources/vendor/backend/font-awesome/fonts/fontawesome-webfont.svg"
+    "src": "resources/vendor/frontend/resources/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg"
   },
   "resources/vendor/backend/font-awesome/fonts/fontawesome-webfont.ttf": {
     "file": "assets/fontawesome-webfont-aa58f33f.ttf",
@@ -61,7 +61,7 @@
   },
   "resources/vendor/backend/font-awesome/fonts/fontawesome-webfont.woff": {
     "file": "assets/fontawesome-webfont-ba0c59de.woff",
-    "src": "resources/vendor/backend/font-awesome/fonts/fontawesome-webfont.woff"
+    "src": "resources/vendor/frontend/resources/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff"
   },
   "resources/vendor/backend/font-awesome/fonts/fontawesome-webfont.woff2": {
     "file": "assets/fontawesome-webfont-2adefcbc.woff2",
@@ -109,7 +109,7 @@
   },
   "resources/vendor/frontend/resources/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg": {
     "file": "assets/fontawesome-webfont-fc378232.svg",
-    "src": "resources/vendor/backend/font-awesome/fonts/fontawesome-webfont.svg"
+    "src": "resources/vendor/frontend/resources/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg"
   },
   "resources/vendor/frontend/resources/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf": {
     "file": "assets/fontawesome-webfont-aa58f33f.ttf",
@@ -117,7 +117,7 @@
   },
   "resources/vendor/frontend/resources/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff": {
     "file": "assets/fontawesome-webfont-ba0c59de.woff",
-    "src": "resources/vendor/backend/font-awesome/fonts/fontawesome-webfont.woff"
+    "src": "resources/vendor/frontend/resources/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff"
   },
   "resources/vendor/frontend/resources/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2": {
     "file": "assets/fontawesome-webfont-2adefcbc.woff2",

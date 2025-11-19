@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        {{-- {{ $system['script_1'] }} --}}
+        {{ $system['script_1'] }}
         @include('frontend.component.head')
         @vite('resources/css/app.scss')
     </head>
@@ -14,6 +14,6 @@
         @include('frontend.component.footer')
         @include('frontend.component.script')
         @vite('resources/js/app.js')
-        {{-- {{ $system['script_2'] }} --}}
+        {{ $system['script_2'] }}
     </body>
 </html>
