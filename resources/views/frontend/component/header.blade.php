@@ -78,7 +78,7 @@
 			@foreach ($menu['mobile'] as $key => $val)
                 @php
                     $name = $val['item']->languages->first()->pivot->name;
-                    $canonical = write_url($val['item']->languages->first()->pivot->canonical, true, true);
+                    $canonical = $name === 'Trang chủ' ? '/' : write_url($val['item']->languages->first()->pivot->canonical, true, true);
                 @endphp
                 <li class="l1 {{ (count($val['children']))?'uk-parent uk-position-relative':'' }}">
                     <?php echo (isset($val['children']) && is_array($val['children']) && count($val['children']))?'<a href="#" title="" class="dropicon"></a>':''; ?>
